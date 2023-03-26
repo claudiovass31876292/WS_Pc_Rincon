@@ -1,0 +1,17 @@
+package EJERCICIO2;
+
+public class prod_refrigerado extends Producto{
+
+	private int codOrganismo;
+	
+	//constructores
+	public prod_refrigerado()
+	{
+		super();
+	}
+	public prod_refrigerado(String fechaCaducidad, int numeroLote, int codOrganismo)
+	{
+		super(fechaCaducidad, numeroLote);
+		this.codOrganismo = codOrganismo;
+	}
+}

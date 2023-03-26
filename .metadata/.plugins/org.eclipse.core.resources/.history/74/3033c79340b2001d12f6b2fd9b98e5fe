@@ -1,0 +1,16 @@
+package Ejerecicio1;
+
+import java.util.TreeSet;
+
+import ejemplo4_Treeset.Persona2;
+
+public class mainEjercicio1_b {
+
+	public static void main(String[] args) {
+		
+		TreeSet <Profesores> = listaProf = new TreeSet<Profesores>();
+		
+
+	}
+
+}

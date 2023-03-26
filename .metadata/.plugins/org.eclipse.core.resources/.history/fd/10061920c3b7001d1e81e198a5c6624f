@@ -1,0 +1,19 @@
+package EJERCICIO2;
+
+public class prod_fresco extends Producto {
+
+	private String fechaEnvasado;
+	private String paisOrigen;
+	
+	// constructors 
+	public prod_fresco() {
+		super();
+	}
+	public prod_fresco(String fechaCaducidad, int numeroLote, String fechaEnvasado, String paisOrigen)
+	{
+		super(fechaCaducidad,numeroLote);
+		this.fechaEnvasado = fechaEnvasado;
+		this.paisOrigen = paisOrigen;
+	}
+	
+}
