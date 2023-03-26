@@ -1,0 +1,24 @@
+package Ejerecicio1;
+
+import java.util.TreeSet;
+
+public class mainEjercicio1_b {
+
+	public static void main(String[] args) {
+		
+		TreeSet <Profesor> listaProf = new TreeSet<Profesor>();
+	    Profesor p1 = new Profesor("Juan",23,"Matematica",1);
+	    Profesor p2 = new Profesor("Esteban",33,"ciencias",3);
+	    Profesor p3 = new Profesor("Alicia",22,"Lengua",2);
+	    Profesor p4 = new Profesor("Celina",21,"Ingles",1);
+	    Profesor p5 = new Profesor("Erika",24,"Matematica",4);
+	    
+	    listaProf.add(p1);
+	    listaProf.add(p2);
+	    listaProf.add(p3);
+	    listaProf.add(p4);
+	    listaProf.add(p5);
+
+	}
+
+}

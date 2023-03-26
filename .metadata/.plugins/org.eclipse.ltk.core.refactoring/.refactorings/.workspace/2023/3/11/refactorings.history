@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;appconsola1_251222&apos; to &apos;encapsulamiento&apos;&#x0D;&#x0A;- Original element: &apos;appconsola1_251222&apos;&#x0D;&#x0A;- Renamed element: &apos;appconsola1_251222&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;appconsola1_251222&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=appconsola1_251222" name="encapsulamiento" references="true" stamp="1678130323364" version="1.0"/>
+</session>

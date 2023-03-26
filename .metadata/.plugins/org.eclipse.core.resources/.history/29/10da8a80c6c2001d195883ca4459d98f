@@ -1,0 +1,59 @@
+package EJERCICIO2;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class Principal_ej2_tp3 {
+
+	public static void main(String[] args) {
+ 
+		Archivos Arch = new Archivos();
+		Arch.setRuta("personas.txt");
+		
+		//creo objetos persona en una lista y se los envio enun hasHset
+		
+		TreeSet <Persona> listaPersona = new TreeSet<Persona>();
+	    Persona p1 = new Persona(/*dni*/31876292,/*nombre*/"Jeremias",/*apellido*/"Hold");
+	    Profesor p2 = new Profesor("Esteban",33,"ciencias",3);
+	    Profesor p3 = new Profesor("Alicia",22,"Lengua",2);
+	    Profesor p4 = new Profesor("Celina",21,"Ingles",1);
+	    Profesor p5 = new Profesor("Celina",21,"Ingles",1);
+	    
+	    listaProf.add(p1);
+	    listaProf.add(p1);
+	    listaProf.add(p2);
+	    listaProf.add(p3);
+	    listaProf.add(p4);
+	    listaProf.add(p5);
+	    
+	    Iterator<Profesor> lp = listaProf.iterator();
+	    while(lp.hasNext()) {
+	    	
+	    	/*Profesor p = (Profesor) lp.next();
+			System.out.println(p.toString());
+	    	/**/
+	    	//lp.next();
+	    	System.out.println(lp.next().toString());
+			
+			
+	    }
+		
+		//********************************************************************
+		
+		if(Arch.existe())
+		{
+			System.out.println("Este archivo existe");
+		}
+		else
+		{
+		System.out.println("No existe y lo voy a crear ");	
+		}
+		
+		//escritura 
+		Arch.escribe_lineas("El metodo escribe lineas no me sirve"); // necesito uno donde pueda pasar los datos por set
+		System.out.println("hola");
+		// lectura
+		Arch.lee_lineas();
+	}
+
+}

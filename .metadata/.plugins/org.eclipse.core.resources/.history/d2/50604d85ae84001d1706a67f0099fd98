@@ -1,0 +1,14 @@
+package dominio;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Persona p1 = new Persona();
+		p1.getNombre("Jeremias");
+		p1.getDni(31876292);
+		
+		System.out.println(p1.toString());
+	}
+
+}

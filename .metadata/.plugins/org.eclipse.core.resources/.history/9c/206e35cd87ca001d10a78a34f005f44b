@@ -1,0 +1,21 @@
+package pantalla_principal;
+
+import javax.swing.JFrame;
+
+
+public class ventana_principal extends JFrame{
+	
+	public ventana_principal()
+	{
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    setSize(500,500);
+	    setLocation(350,350);
+	    setTitle("Panel principal");
+	    
+	}
+	
+	public void visibilidad(boolean estado)
+	{
+		setVisible(true);
+	}
+}
