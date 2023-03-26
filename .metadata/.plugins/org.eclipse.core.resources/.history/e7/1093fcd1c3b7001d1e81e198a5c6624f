@@ -1,0 +1,17 @@
+package EJERCICIO2;
+
+public class mainEjercicio2 {
+
+	public static void main(String[] args) {
+		
+		prod_fresco pf = new prod_fresco();
+		pf.setFechaCaducidad("10/10/92");
+		pf.setFechaEnvasado("10/10/1885");
+		pf.setNumeroLote(1);
+		pf.setPaisOrigen("Argentina");
+		
+		
+		
+	}
+
+}

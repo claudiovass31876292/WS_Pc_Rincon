@@ -1,0 +1,12 @@
+package pantalla_principal;
+
+import javax.swing;
+import javax.swing.JFrame;
+
+
+public class ejercicio1 extends JFrame{
+	
+		
+	
+	
+}

@@ -1,0 +1,30 @@
+package EJERCICIO2;
+
+public class Principal_ej2_tp3 {
+
+	public static void main(String[] args) {
+ 
+		Archivos Arch = new Archivos();
+		Arch.setRuta("personas.txt");
+		
+		//creo objetos persona en una lista y se los envio enun hasHset
+		
+		
+		
+		if(Arch.existe())
+		{
+			System.out.println("Este archivo existe");
+		}
+		else
+		{
+		System.out.println("No existe y lo voy a crear ");	
+		}
+		
+		//escritura 
+		Arch.escribe_lineas("El metodo escribe lineas no me sirve"); // necesito uno donde pueda pasar los datos por set
+		System.out.println("hola");
+		// lectura
+		Arch.lee_lineas();
+	}
+
+}

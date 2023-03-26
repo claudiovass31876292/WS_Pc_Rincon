@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/REPOSITORIO_FINAL/Codigo profesores/Archivos_Threads/AppConsola7/src/ejemplo3_Threads/Principal.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ejemplo3_Threads.Principal"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="REPOSITORIO_FINAL"/>
+</launchConfiguration>

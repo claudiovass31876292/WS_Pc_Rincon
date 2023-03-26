@@ -1,0 +1,35 @@
+package pantalla_principal;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+
+public class ventana_principal extends JFrame{
+	
+	//este numero sirve para saber si funciona el programa cuando lo envio a una salida externa
+	private static final long serialVersionUID = 1L;
+	
+	JButton	boton = new JButton();
+	
+	public ventana_principal()
+	{
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    setSize(500,500);
+	    setLocation(350,350);
+	    setTitle("Panel principal");
+	    setLayout(null);	 
+	    
+	    //cracion del boton 
+	     
+	    boton.setText("EJERCICIO 1");
+	    boton.setBounds(175,200,135,30);
+ 	   boton.addActionListener(new eventoboton());
+	    //para agregar el boton al frame
+	    getContentPane().add(boton);
+	}
+	
+	public void visibilidad(boolean estado)
+	{
+		setVisible(true);
+	}
+}

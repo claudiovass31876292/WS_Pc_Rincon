@@ -1,0 +1,42 @@
+package Ejerecicio1;
+
+public class Profesor extends Empleado{
+
+	private String cargo;
+	private int antiguedadDoc;
+	
+	//constructor
+	public Profesor()
+	{
+		super();
+		this.cargo = " vacio ";
+		this.antiguedadDoc = 0;
+	}
+	public Profesor(String nombre, int edad, String cargo, int antiguedadDoc)
+	{
+		super(nombre,edad);
+		this.cargo = cargo;
+		this.antiguedadDoc = antiguedadDoc;		
+	}
+	
+	
+	
+	public String getCargo() {
+		return cargo;
+	}
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+	public int getAntiguedadDoc() {
+		return antiguedadDoc;
+	}
+	public void setAntiguedadDoc(int antiguedadDoc) {
+		this.antiguedadDoc = antiguedadDoc;
+	}
+	//ToString
+	@Override
+	public String toString() {
+		return "Profesor: "+super.toString() + getNombre()+ " Cargo: " + cargo + " antiguedad: "+ antiguedadDoc + " edad: "+ getEdad() ;
+	}
+	
+}

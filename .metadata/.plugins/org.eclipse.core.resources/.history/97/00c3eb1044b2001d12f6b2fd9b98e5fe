@@ -1,0 +1,5 @@
+package Ejerecicio1;
+
+public interface Iempleado {
+
+}
