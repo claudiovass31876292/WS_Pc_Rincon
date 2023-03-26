@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="1" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/claudiovass31876292/repositorio_final.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="ClaudioVass &lt;54720366+claudiovass31876292@users.noreply.github.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="ClaudioVass &lt;54720366+claudiovass31876292@users.noreply.github.com&gt;"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\soporte1\Documents\GitHub\ResumenesProgramacion\.git">
+			<item value="true"/>
+			<item value="ClaudioVass &lt;54720366+claudiovass31876292@users.noreply.github.com&gt;"/>
+			<item value="mucho del repo resumen de programacion&#x0D;&#x0A;&#x0D;&#x0A;&#x0A;"/>
+			<item value="ClaudioVass &lt;54720366+claudiovass31876292@users.noreply.github.com&gt;"/>
+			<item value="6f18fca33dbb603468c6a55d5bd5623f61ffa6bd"/>
+			<item value="0"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="true" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

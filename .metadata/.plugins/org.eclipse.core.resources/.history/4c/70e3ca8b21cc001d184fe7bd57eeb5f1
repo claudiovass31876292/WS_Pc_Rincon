@@ -8,8 +8,7 @@ public class Main_tp4_II {
 
 		PanelPrincipal ven = new PanelPrincipal();
 		ven.visibilidad(true);
-       
-		// comentario 1
+
 	}
 
 }
