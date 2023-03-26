@@ -10,6 +10,7 @@ public class Main_tp4_II {
 		ven.visibilidad(true);
        
 		// comentario 1
+		//comentario desde laptop 1
 	}
 
 }
