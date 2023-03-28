@@ -46,7 +46,6 @@ public class PantallaPrincipal extends JFrame {
 		JButton btnEjercicio2 = new JButton("EJERCICIO 2");
 		btnEjercicio2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println(" ¡You are in EJERCIO 2!");
 			}
 		});
 		btnEjercicio2.setBounds(153, 115, 123, 23);
@@ -55,7 +54,6 @@ public class PantallaPrincipal extends JFrame {
 		JButton btnEjerciccio3 = new JButton("EJERCICIO 3");
 		btnEjerciccio3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println(" ¡You are in EJERCICIO 3! ");
 			}
 		});
 		btnEjerciccio3.setBounds(153, 165, 123, 23);
