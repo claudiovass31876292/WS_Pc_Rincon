@@ -19,13 +19,13 @@ public class Contactos extends JFrame {
 	private JTextField textField_2;
 	private JTextField textField_3;
 
-	// instancias 
-	private JLabel lblNombre;
-	private JLabel lblApellido;
-	private JLabel lblTelefono;
-	private JLabel lblFechaNac;
-	private JLabel lblMensaje;
+	/**
+	 * Launch the application.
+	 */
 	
+	/**
+	 * Create the frame.
+	 */
 	public Contactos() {
 		setTitle("Contactos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,25 +35,25 @@ public class Contactos extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		lblNombre = new JLabel("Nombre");
+		JLabel lblNombre = new JLabel("Nombre");
 		lblNombre.setBounds(41, 53, 75, 14);
 		contentPane.add(lblNombre);
 		
-		lblApellido = new JLabel("Apellido");
+		JLabel lblApellido = new JLabel("Apellido");
 		lblApellido.setBounds(41, 78, 75, 19);
 		contentPane.add(lblApellido);
 		
-		lblTelefono = new JLabel("Telefono");
+		JLabel lblTelefono = new JLabel("Telefono");
 		lblTelefono.setBounds(41, 108, 75, 14);
 		contentPane.add(lblTelefono);
 		
-		lblFechaNac = new JLabel("Fecha Nac.");
+		JLabel lblFechaNac = new JLabel("Fecha Nac.");
 		lblFechaNac.setBounds(41, 133, 75, 14);
 		contentPane.add(lblFechaNac);
 		
-		lblMensaje = new JLabel("Los datos ingresados fueron: ");
-		lblMensaje.setBounds(41, 219, 245, 14);
-		contentPane.add(lblMensaje);
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setBounds(41, 219, 245, 14);
+		contentPane.add(lblNewLabel_2);
 		
 		textField = new JTextField();
 		textField.setBounds(127, 50, 200, 20);

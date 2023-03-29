@@ -23,8 +23,6 @@ public class Contactos extends JFrame {
 	private JLabel lblNombre;
 	private JLabel lblApellido;
 	private JLabel lblTelefono;
-	private JLabel lblFechaNac;
-	private JLabel lblMensaje;
 	
 	public Contactos() {
 		setTitle("Contactos");
@@ -47,13 +45,13 @@ public class Contactos extends JFrame {
 		lblTelefono.setBounds(41, 108, 75, 14);
 		contentPane.add(lblTelefono);
 		
-		lblFechaNac = new JLabel("Fecha Nac.");
+		JLabel lblFechaNac = new JLabel("Fecha Nac.");
 		lblFechaNac.setBounds(41, 133, 75, 14);
 		contentPane.add(lblFechaNac);
 		
-		lblMensaje = new JLabel("Los datos ingresados fueron: ");
-		lblMensaje.setBounds(41, 219, 245, 14);
-		contentPane.add(lblMensaje);
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setBounds(41, 219, 245, 14);
+		contentPane.add(lblNewLabel_2);
 		
 		textField = new JTextField();
 		textField.setBounds(127, 50, 200, 20);

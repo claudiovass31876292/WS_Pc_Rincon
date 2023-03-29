@@ -51,7 +51,7 @@ public class Contactos extends JFrame {
 		lblFechaNac.setBounds(41, 133, 75, 14);
 		contentPane.add(lblFechaNac);
 		
-		lblMensaje = new JLabel("Los datos ingresados fueron: ");
+		lblMensaje = new JLabel("New label");
 		lblMensaje.setBounds(41, 219, 245, 14);
 		contentPane.add(lblMensaje);
 		
