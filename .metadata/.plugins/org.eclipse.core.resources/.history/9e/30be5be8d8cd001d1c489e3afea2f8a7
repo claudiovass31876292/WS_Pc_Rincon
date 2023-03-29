@@ -35,14 +35,6 @@ public class Contactos extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		creacionLabel();
-		creacionTextField();
-		
-			}
-	
-	public void creacionLabel()
-	{
-
 		lblNombre = new JLabel("Nombre");
 		lblNombre.setBounds(41, 53, 75, 14);
 		contentPane.add(lblNombre);
@@ -63,10 +55,6 @@ public class Contactos extends JFrame {
 		lblMensaje.setBounds(41, 219, 245, 14);
 		contentPane.add(lblMensaje);
 		
-	}
-	
-	public void creacionTextField()
-	{
 		textField = new JTextField();
 		textField.setBounds(127, 50, 200, 20);
 		contentPane.add(textField);
@@ -86,6 +74,5 @@ public class Contactos extends JFrame {
 		textField_3.setBounds(127, 130, 200, 20);
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
-
 	}
 }
