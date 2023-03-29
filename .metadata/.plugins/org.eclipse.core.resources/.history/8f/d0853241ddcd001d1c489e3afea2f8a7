@@ -10,7 +10,6 @@ import javax.swing.JLabel;
 import java.awt.Component;
 import javax.swing.Box;
 import javax.swing.JTextField;
-import javax.swing.JButton;
 
 public class Contactos extends JFrame {
 
@@ -64,7 +63,7 @@ public class Contactos extends JFrame {
 		lblFechaNac.setBounds(41, 133, 75, 14);
 		contentPane.add(lblFechaNac);
 		
-		lblMensaje = new JLabel("Los datos ingresados fueron: ");
+		lblMensaje = new JLabel("Los datos ingresados fueron: "+ txtApellido);
 		lblMensaje.setBounds(41, 219, 245, 14);
 		contentPane.add(lblMensaje);
 		
@@ -91,15 +90,6 @@ public class Contactos extends JFrame {
 		txtFechaNac.setBounds(127, 130, 200, 20);
 		contentPane.add(txtFechaNac);
 		txtFechaNac.setColumns(10);
-		
-		JButton btnMostrar = new JButton("Mostrar");
-		btnMostrar.setBounds(174, 177, 89, 23);
-		contentPane.add(btnMostrar);
 
-	}
-	
-	public void creacionBoton()
-	{
-		/* dessarrollar */
 	}
 }

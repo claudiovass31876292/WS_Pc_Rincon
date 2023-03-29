@@ -10,19 +10,14 @@ import javax.swing.JLabel;
 import java.awt.Component;
 import javax.swing.Box;
 import javax.swing.JTextField;
-import javax.swing.JButton;
 
 public class Contactos extends JFrame {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField txtNombre;
-	private JTextField txtApellido;
-	private JTextField txtTelefono;
-	private JTextField txtFechaNac;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
 
 	// instancias 
 	private JLabel lblNombre;
@@ -64,7 +59,7 @@ public class Contactos extends JFrame {
 		lblFechaNac.setBounds(41, 133, 75, 14);
 		contentPane.add(lblFechaNac);
 		
-		lblMensaje = new JLabel("Los datos ingresados fueron: ");
+		lblMensaje = new JLabel("Los datos ingresados fueron: "+);
 		lblMensaje.setBounds(41, 219, 245, 14);
 		contentPane.add(lblMensaje);
 		
@@ -72,34 +67,25 @@ public class Contactos extends JFrame {
 	
 	public void creacionTextField()
 	{
-		txtNombre = new JTextField();
-		txtNombre.setBounds(127, 50, 200, 20);
-		contentPane.add(txtNombre);
-		txtNombre.setColumns(10);
+		textField = new JTextField();
+		textField.setBounds(127, 50, 200, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
 		
-		txtApellido = new JTextField();
-		txtApellido.setBounds(126, 77, 201, 20);
-		contentPane.add(txtApellido);
-		txtApellido.setColumns(10);
+		textField_1 = new JTextField();
+		textField_1.setBounds(126, 77, 201, 20);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
 		
-		txtTelefono = new JTextField();
-		txtTelefono.setBounds(127, 105, 200, 20);
-		contentPane.add(txtTelefono);
-		txtTelefono.setColumns(10);
+		textField_2 = new JTextField();
+		textField_2.setBounds(127, 105, 200, 20);
+		contentPane.add(textField_2);
+		textField_2.setColumns(10);
 		
-		txtFechaNac = new JTextField();
-		txtFechaNac.setBounds(127, 130, 200, 20);
-		contentPane.add(txtFechaNac);
-		txtFechaNac.setColumns(10);
-		
-		JButton btnMostrar = new JButton("Mostrar");
-		btnMostrar.setBounds(174, 177, 89, 23);
-		contentPane.add(btnMostrar);
+		textField_3 = new JTextField();
+		textField_3.setBounds(127, 130, 200, 20);
+		contentPane.add(textField_3);
+		textField_3.setColumns(10);
 
-	}
-	
-	public void creacionBoton()
-	{
-		/* dessarrollar */
 	}
 }
