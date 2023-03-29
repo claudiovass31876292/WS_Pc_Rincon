@@ -37,15 +37,6 @@ public class PantallaPrincipal extends JFrame {
 		contentPane.add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		
-		creacionBotones();
-		
-		lblNewLabel = new JLabel("GRUPO NRO: 5");
-    	lblNewLabel.setBackground(Color.BLACK);
-		lblNewLabel.setBounds(153, 21, 123, 14);
-		panel.add(lblNewLabel);
-	}
-	
-	public void creacionBotones() {
 		btnEjercicio1 = new JButton("EJERCICIO 1");
 		btnEjercicio1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -73,6 +64,9 @@ public class PantallaPrincipal extends JFrame {
 		btnEjerciccio3.setBounds(153, 165, 123, 23);
 		panel.add(btnEjerciccio3);
 		
+		lblNewLabel = new JLabel("GRUPO NRO: 5");
+    	lblNewLabel.setBackground(Color.BLACK);
+		lblNewLabel.setBounds(153, 21, 123, 14);
+		panel.add(lblNewLabel);
 	}
-	
 }

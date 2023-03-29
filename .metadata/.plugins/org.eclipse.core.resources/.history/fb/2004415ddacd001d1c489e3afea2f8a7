@@ -37,7 +37,6 @@ public class PantallaPrincipal extends JFrame {
 		contentPane.add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		
-		creacionBotones();
 		
 		lblNewLabel = new JLabel("GRUPO NRO: 5");
     	lblNewLabel.setBackground(Color.BLACK);

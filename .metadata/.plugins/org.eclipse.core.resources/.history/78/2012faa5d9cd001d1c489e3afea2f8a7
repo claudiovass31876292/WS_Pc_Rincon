@@ -2,7 +2,6 @@ package Ejercicios_tp4;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import java.awt.Label;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -18,10 +17,9 @@ public class PantallaPrincipal extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JPanel panel;
-	private JButton btnEjercicio1;
-    private JButton btnEjercicio2;
-    private JButton btnEjerciccio3;	
-    private JLabel lblNewLabel;
+
+	
+
 	/**
 	 * Create the frame.   ¿Me pide crear un frame ?  22:57 desde pc tigre el 27/03/23 
 	 */
@@ -37,16 +35,7 @@ public class PantallaPrincipal extends JFrame {
 		contentPane.add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		
-		creacionBotones();
-		
-		lblNewLabel = new JLabel("GRUPO NRO: 5");
-    	lblNewLabel.setBackground(Color.BLACK);
-		lblNewLabel.setBounds(153, 21, 123, 14);
-		panel.add(lblNewLabel);
-	}
-	
-	public void creacionBotones() {
-		btnEjercicio1 = new JButton("EJERCICIO 1");
+		JButton btnEjercicio1 = new JButton("EJERCICIO 1");
 		btnEjercicio1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println(" ¡You are selected EJERCICIO 1! ");
@@ -55,7 +44,7 @@ public class PantallaPrincipal extends JFrame {
 		btnEjercicio1.setBounds(153, 64, 123, 23);
 		panel.add(btnEjercicio1);
 		
-		btnEjercicio2 = new JButton("EJERCICIO 2");
+		JButton btnEjercicio2 = new JButton("EJERCICIO 2");
 		btnEjercicio2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println(" ¡You are in EJERCIO 2!");
@@ -64,7 +53,7 @@ public class PantallaPrincipal extends JFrame {
 		btnEjercicio2.setBounds(153, 115, 123, 23);
 		panel.add(btnEjercicio2);
 		
-		btnEjerciccio3 = new JButton("EJERCICIO 3");
+		JButton btnEjerciccio3 = new JButton("EJERCICIO 3");
 		btnEjerciccio3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println(" ¡You are in EJERCICIO 3! ");
@@ -73,6 +62,9 @@ public class PantallaPrincipal extends JFrame {
 		btnEjerciccio3.setBounds(153, 165, 123, 23);
 		panel.add(btnEjerciccio3);
 		
+		JLabel lblNewLabel = new JLabel("GRUPO NRO: 5");
+		lblNewLabel.setBackground(Color.BLACK);
+		lblNewLabel.setBounds(153, 21, 123, 14);
+		panel.add(lblNewLabel);
 	}
-	
 }
