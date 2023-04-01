@@ -43,7 +43,7 @@ public class Contactos extends JFrame {
 		
 		creacionLabel();
 		creacionTextField();
-		creacionBoton();
+		
 			}
 	
 	public void creacionLabel()
