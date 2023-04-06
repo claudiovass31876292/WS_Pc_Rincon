@@ -9,8 +9,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-
 import java.awt.Component;
 import javax.swing.Box;
 import javax.swing.JTextField;
@@ -72,14 +70,10 @@ public class Contactos extends JFrame {
 		lblFechaNac.setBounds(41, 133, 75, 14);
 		contentPane.add(lblFechaNac);
 		
-		
-	}
-	
-	public void mensajeLabel()
-	{
 		lblMensaje = new JLabel("Los datos ingresados fueron: ");
 		lblMensaje.setBounds(41, 219, 245, 14);
 		contentPane.add(lblMensaje);
+		
 	}
 	
 	public void creacionTextField()
@@ -122,8 +116,7 @@ public class Contactos extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("ahora si ");
-			//lblMensaje.setText("hola hola");
+			// TODO Auto-generated method stub
 			
 		}
 		

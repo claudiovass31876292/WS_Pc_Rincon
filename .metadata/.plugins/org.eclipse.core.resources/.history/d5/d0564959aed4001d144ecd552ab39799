@@ -122,8 +122,8 @@ public class Contactos extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("ahora si ");
-			//lblMensaje.setText("hola hola");
+			//System.out.println("ahora si ");
+			lblMensaje.setText("hola hola");
 			
 		}
 		
