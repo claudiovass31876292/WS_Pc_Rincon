@@ -83,8 +83,6 @@ public class Contactos extends JFrame {
 		contentPane.add(lblMensaje);
 	}
 	
-
-	
 	public void creacionTextField()
 	{
 		txtNombre = new JTextField();
@@ -125,8 +123,7 @@ public class Contactos extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			JOptionPane.showMessageDialog(null, "hola "+ txtNombre.getText());
-			
+			mensajeLabel();
 		}
 		
 	}

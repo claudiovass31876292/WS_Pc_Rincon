@@ -125,7 +125,7 @@ public class Contactos extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			JOptionPane.showMessageDialog(null, "hola "+ txtNombre.getText());
+			JOptionPane.showMessageDialog(null, "hola"+ txtNombre.getText());
 			
 		}
 		

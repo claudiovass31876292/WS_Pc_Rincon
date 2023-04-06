@@ -21,6 +21,9 @@ import javax.swing.event.ChangeEvent;
 
 public class Contactos extends JFrame {
 
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField txtNombre;
@@ -49,10 +52,7 @@ public class Contactos extends JFrame {
 		creacionTextField();
 		creacionBoton();
 		//mensajeLabel();
-		
-	}
-	
-	
+			}
 	
 	public void creacionLabel()
 	{
@@ -82,8 +82,6 @@ public class Contactos extends JFrame {
 		lblMensaje.setBounds(41, 219, 245, 14);
 		contentPane.add(lblMensaje);
 	}
-	
-
 	
 	public void creacionTextField()
 	{
@@ -125,8 +123,7 @@ public class Contactos extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			JOptionPane.showMessageDialog(null, "hola "+ txtNombre.getText());
-			
+			mensajeLabel();
 		}
 		
 	}
