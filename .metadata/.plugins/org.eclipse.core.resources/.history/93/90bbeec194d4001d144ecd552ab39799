@@ -50,12 +50,6 @@ public class PantallaPrincipal extends JFrame {
 		btnEjercicio1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println(" ¡You are selected EJERCICIO 1! ");
-				try {
-					Contactos frame = new Contactos();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		});
 		btnEjercicio1.setBounds(153, 64, 123, 23);

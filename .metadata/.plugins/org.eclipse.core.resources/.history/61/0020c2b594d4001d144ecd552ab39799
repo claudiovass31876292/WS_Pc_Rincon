@@ -15,7 +15,12 @@ public class Principal {
 						e.printStackTrace();
 					}
 					
-					
+					try {
+						Contactos frame = new Contactos();
+						frame.setVisible(true);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
 					
 				}
 			});
