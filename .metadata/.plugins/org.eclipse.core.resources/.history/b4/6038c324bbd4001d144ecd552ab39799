@@ -52,12 +52,6 @@ public class Contactos extends JFrame {
 		
 	}
 	
-	public Contactos(JTextField nombre, JTextField apellido) {
-		
-		txtNombre = nombre;
-		txtApellido = apellido;
-		
-	}
 	
 	
 	public void creacionLabel()
@@ -84,7 +78,7 @@ public class Contactos extends JFrame {
 	
 	public void mensajeLabel()
 	{
-		lblMensaje = new JLabel("Los datos ingresados fueron: " );
+		lblMensaje = new JLabel("Los datos ingresados fueron: ");
 		lblMensaje.setBounds(41, 219, 245, 14);
 		contentPane.add(lblMensaje);
 	}	
@@ -133,10 +127,7 @@ public class Contactos extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
-			lblMensaje = new JLabel("Los datos ingresados fueron: ");
-			lblMensaje.setBounds(41, 219, 245, 14);
-			contentPane.add(lblMensaje);
-			
+				
 			JOptionPane.showMessageDialog(null, lblMensaje.getText());
 			
 		}

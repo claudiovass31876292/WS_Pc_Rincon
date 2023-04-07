@@ -52,12 +52,6 @@ public class Contactos extends JFrame {
 		
 	}
 	
-	public Contactos(JTextField nombre, JTextField apellido) {
-		
-		txtNombre = nombre;
-		txtApellido = apellido;
-		
-	}
 	
 	
 	public void creacionLabel()

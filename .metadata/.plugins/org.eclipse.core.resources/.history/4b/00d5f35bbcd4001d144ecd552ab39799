@@ -52,10 +52,9 @@ public class Contactos extends JFrame {
 		
 	}
 	
-	public Contactos(JTextField nombre, JTextField apellido) {
+	public Contactos(JTextField nombre, JTextField Apellido) {
 		
 		txtNombre = nombre;
-		txtApellido = apellido;
 		
 	}
 	
