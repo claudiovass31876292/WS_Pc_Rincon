@@ -133,30 +133,27 @@ public class Contactos extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
-			//
+			//if(txtNombre.getText().isEmpty() || txtApellido.getText().isEmpty() || txtFechaNac.getText().isEmpty() || txtTelefono.getText().isEmpty()) 
+			//{
 			if(txtNombre.getText().isEmpty()) txtNombre.setBackground(Color.RED);
 			if(txtApellido.getText().isEmpty()) txtApellido.setBackground(Color.RED);
 			if(txtFechaNac.getText().isEmpty()) txtFechaNac.setBackground(Color.RED);
 			if(txtTelefono.getText().isEmpty()) txtTelefono.setBackground(Color.RED);
 			
-			if(txtNombre.getText().isEmpty() || txtApellido.getText().isEmpty() || txtFechaNac.getText().isEmpty() || txtTelefono.getText().isEmpty()) 
-			{
-	           
-				JOptionPane.showMessageDialog(null, " ATENCION! Debe completar todos los campos ");
-				
-				
-			}
-					
 			
+			//} 
+			//else
+			//{
 			else
 			{
+				JOptionPane.showMessageDialog(null, " ATENCION! Debe completar todos los campos ");
+				
+			}
 				lblMensaje = new JLabel("Los datos ingresados fueron: "+ " Nombre: "+ txtNombre.getText() + " Apellido: "+ txtApellido.getText() + " Fecha de Nacimiento: " + txtFechaNac.getText() + " Telefono: " + txtTelefono.getText());
 				lblMensaje.setBounds(41, 219, 245, 14);
 				contentPane.add(lblMensaje);
 				
-				JOptionPane.showMessageDialog(null, lblMensaje.getText());	
-			}
-				
+				JOptionPane.showMessageDialog(null, lblMensaje.getText());
 					
 			//}
 			

@@ -133,38 +133,13 @@ public class Contactos extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
-			//
-			if(txtNombre.getText().isEmpty()) txtNombre.setBackground(Color.RED);
-			if(txtApellido.getText().isEmpty()) txtApellido.setBackground(Color.RED);
-			if(txtFechaNac.getText().isEmpty()) txtFechaNac.setBackground(Color.RED);
-			if(txtTelefono.getText().isEmpty()) txtTelefono.setBackground(Color.RED);
+			lblMensaje = new JLabel("Los datos ingresados fueron: "+ " Nombre: "+ txtNombre.getText() + " Apellido: "+ txtApellido.getText() + " Fecha de Nacimiento: " + txtFechaNac.getText() + " Telefono: " + txtTelefono.getText());
+			lblMensaje.setBounds(41, 219, 245, 14);
+			contentPane.add(lblMensaje);
 			
-			if(txtNombre.getText().isEmpty() || txtApellido.getText().isEmpty() || txtFechaNac.getText().isEmpty() || txtTelefono.getText().isEmpty()) 
-			{
-	           
-				JOptionPane.showMessageDialog(null, " ATENCION! Debe completar todos los campos ");
-				
-				
-			}
-					
+			JOptionPane.showMessageDialog(null, lblMensaje.getText());
 			
-			else
-			{
-				lblMensaje = new JLabel("Los datos ingresados fueron: "+ " Nombre: "+ txtNombre.getText() + " Apellido: "+ txtApellido.getText() + " Fecha de Nacimiento: " + txtFechaNac.getText() + " Telefono: " + txtTelefono.getText());
-				lblMensaje.setBounds(41, 219, 245, 14);
-				contentPane.add(lblMensaje);
-				
-				JOptionPane.showMessageDialog(null, lblMensaje.getText());	
-			}
-				
-					
-			//}
-			
-			
-			
-			
-			//solucion preguntar por el hashcode y validar los campos vacios 
-			/*boolean bandera = false;
+			boolean bandera = false;
 			
 			if(bandera) {
 				bandera = true;
@@ -174,7 +149,7 @@ public class Contactos extends JFrame {
 				contentPane.add(txtNombre);
 				txtNombre.setColumns(10);
 					
-			}*/
+			}
 			
 		}
 		
