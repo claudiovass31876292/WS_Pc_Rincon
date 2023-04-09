@@ -139,18 +139,6 @@ public class Contactos extends JFrame {
 			
 			JOptionPane.showMessageDialog(null, lblMensaje.getText());
 			
-			boolean bandera = false;
-			
-			if(bandera) {
-				bandera = true;
-				txtNombre.setBackground(Color.RED);
-				txtNombre.setBounds(127, 50, 200, 20);
-				txtNombre.getCursor();
-				contentPane.add(txtNombre);
-				txtNombre.setColumns(10);
-					
-			}
-			
 		}
 		
 	}

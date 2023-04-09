@@ -133,23 +133,11 @@ public class Contactos extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
-			lblMensaje = new JLabel("Los datos ingresados fueron: "+ " Nombre: "+ txtNombre.getText() + " Apellido: "+ txtApellido.getText() + " Fecha de Nacimiento: " + txtFechaNac.getText() + " Telefono: " + txtTelefono.getText());
+			lblMensaje = new JLabel("Los datos ingresados fueron: "+ lblNombre + lblApellido);
 			lblMensaje.setBounds(41, 219, 245, 14);
 			contentPane.add(lblMensaje);
 			
 			JOptionPane.showMessageDialog(null, lblMensaje.getText());
-			
-			boolean bandera = false;
-			
-			if(bandera) {
-				bandera = true;
-				txtNombre.setBackground(Color.RED);
-				txtNombre.setBounds(127, 50, 200, 20);
-				txtNombre.getCursor();
-				contentPane.add(txtNombre);
-				txtNombre.setColumns(10);
-					
-			}
 			
 		}
 		
