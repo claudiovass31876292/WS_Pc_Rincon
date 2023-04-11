@@ -154,16 +154,7 @@ public class Contactos extends JFrame {
 				lblMensaje.setBounds(41, 219, 245, 14);
 				contentPane.add(lblMensaje);
 				
-				txtNombre.setText("");
-				txtApellido.setText("");
-				txtFechaNac.setText("");
-				txtTelefono.setText("");
-				txtNombre.setBackground(Color.WHITE);
-				txtApellido.setBackground(Color.WHITE);
-				txtFechaNac.setBackground(Color.WHITE);
-				txtTelefono.setBackground(Color.WHITE);
 				JOptionPane.showMessageDialog(null, lblMensaje.getText());	
-				
 			}
 				
 					
