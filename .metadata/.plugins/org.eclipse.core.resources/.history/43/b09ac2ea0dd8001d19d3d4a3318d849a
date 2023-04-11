@@ -9,17 +9,18 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Component;
 import javax.swing.Box;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Color;
+import javax.swing.event.ChangeListener;
+import javax.swing.event.ChangeEvent;
 
 public class Contactos extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField txtNombre;
@@ -47,7 +48,17 @@ public class Contactos extends JFrame {
 		creacionLabel();
 		creacionTextField();
 		creacionBoton();
-			}
+		//mensajeLabel();
+		
+	}
+	
+	public Contactos(JTextField nombre, JTextField apellido) {
+		
+		txtNombre = nombre;
+		txtApellido = apellido;
+		
+	}
+	
 	
 	public void creacionLabel()
 	{
@@ -68,16 +79,22 @@ public class Contactos extends JFrame {
 		lblFechaNac.setBounds(41, 133, 75, 14);
 		contentPane.add(lblFechaNac);
 		
-		lblMensaje = new JLabel("Los datos ingresados fueron: " + txtNombre);
-		lblMensaje.setBounds(41, 219, 245, 14);
-		contentPane.add(lblMensaje);
 		
 	}
+	
+	public void mensajeLabel()
+	{
+		lblMensaje = new JLabel("Los datos ingresados fueron: " );
+		lblMensaje.setBounds(41, 219, 245, 14);
+		contentPane.add(lblMensaje);
+	}	
+	
+
 	
 	public void creacionTextField()
 	{
 		txtNombre = new JTextField();
-		txtNombre.setBackground(Color.RED);
+		txtNombre.setBackground(Color.WHITE);
 		txtNombre.setBounds(127, 50, 200, 20);
 		contentPane.add(txtNombre);
 		txtNombre.setColumns(10);
@@ -105,14 +122,71 @@ public class Contactos extends JFrame {
 	{
 		btnMostrar = new JButton("Mostrar");
 		btnMostrar.setBounds(174, 177, 89, 23);
+		btnMostrar.addActionListener(new eventoBoton());
 		contentPane.add(btnMostrar);	/* dessarrollar */
-		btnMostrar.addActionListener(new ActionListener() {
+	}
+	
+	public class eventoBoton implements ActionListener
+	{
+		
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
 			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				System.out.println(lblMensaje);
+			//
+			if(txtNombre.getText().isEmpty()) txtNombre.setBackground(Color.RED);
+			if(txtApellido.getText().isEmpty()) txtApellido.setBackground(Color.RED);
+			if(txtFechaNac.getText().isEmpty()) txtFechaNac.setBackground(Color.RED);
+			if(txtTelefono.getText().isEmpty()) txtTelefono.setBackground(Color.RED);
+			
+			if(txtNombre.getText().isEmpty() || txtApellido.getText().isEmpty() || txtFechaNac.getText().isEmpty() || txtTelefono.getText().isEmpty()) 
+			{
+	           
+				JOptionPane.showMessageDialog(null, " ATENCION! Debe completar todos los campos ");
+				
+				
 			}
-		});
+					
+			
+			else
+			{
+				lblMensaje = new JLabel("Los datos ingresados fueron: "+ " Nombre: "+ txtNombre.getText() + " Apellido: "+ txtApellido.getText() + " Fecha de Nacimiento: " + txtFechaNac.getText() + " Telefono: " + txtTelefono.getText());
+				lblMensaje.setBounds(41, 219, 245, 14);
+				contentPane.add(lblMensaje);
+				
+				txtNombre.setText("");
+				txtApellido.setText("");
+				txtFechaNac.setText("");
+				txtTelefono.setText("");
+				txtNombre.setBackground(Color.WHITE);
+				txtApellido.setBackground(Color.WHITE);
+				txtFechaNac.setBackground(Color.WHITE);
+				txtTelefono.setBackground(Color.WHITE);
+				JOptionPane.showMessageDialog(null, lblMensaje.getText());	
+				
+			}
+				
+					
+			//}
+			
+			
+			
+			
+			//solucion preguntar por el hashcode y validar los campos vacios 
+			/*boolean bandera = false;
+			
+			if(bandera) {
+				bandera = true;
+				txtNombre.setBackground(Color.RED);
+				txtNombre.setBounds(127, 50, 200, 20);
+				txtNombre.getCursor();
+				contentPane.add(txtNombre);
+				txtNombre.setColumns(10);
+					
+			}*/
+			
+		}
+		
 	}
 }
+

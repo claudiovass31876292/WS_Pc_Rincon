@@ -123,7 +123,7 @@ public class Contactos extends JFrame {
 		btnMostrar = new JButton("Mostrar");
 		btnMostrar.setBounds(174, 177, 89, 23);
 		btnMostrar.addActionListener(new eventoBoton());
-		contentPane.add(btnMostrar);	/* dessarrollar */
+		contentPane.add(btnMostrar);	
 	}
 	
 	public class eventoBoton implements ActionListener
@@ -146,8 +146,6 @@ public class Contactos extends JFrame {
 				
 				
 			}
-					
-			
 			else
 			{
 				lblMensaje = new JLabel("Los datos ingresados fueron: "+ " Nombre: "+ txtNombre.getText() + " Apellido: "+ txtApellido.getText() + " Fecha de Nacimiento: " + txtFechaNac.getText() + " Telefono: " + txtTelefono.getText());
@@ -165,26 +163,7 @@ public class Contactos extends JFrame {
 				JOptionPane.showMessageDialog(null, lblMensaje.getText());	
 				
 			}
-				
-					
-			//}
-			
-			
-			
-			
-			//solucion preguntar por el hashcode y validar los campos vacios 
-			/*boolean bandera = false;
-			
-			if(bandera) {
-				bandera = true;
-				txtNombre.setBackground(Color.RED);
-				txtNombre.setBounds(127, 50, 200, 20);
-				txtNombre.getCursor();
-				contentPane.add(txtNombre);
-				txtNombre.setColumns(10);
-					
-			}*/
-			
+						
 		}
 		
 	}
