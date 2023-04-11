@@ -27,4 +27,5 @@
 <fullyQualifiedTypeName name="Ejercicios_tp4.PanelPrincipal"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="java.awt.Label"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
 </qualifiedTypeNameHistroy>
