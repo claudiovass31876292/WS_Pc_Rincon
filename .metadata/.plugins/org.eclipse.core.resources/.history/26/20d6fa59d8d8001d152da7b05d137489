@@ -68,8 +68,8 @@ public class PantallaPrincipal extends JFrame {
 				try {
 					Promedios frame = new Promedios();
 					frame.setVisible(true);
-				} catch (Exception e1) {
-					e1.printStackTrace();
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			}
 		});
