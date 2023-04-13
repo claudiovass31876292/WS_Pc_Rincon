@@ -112,8 +112,8 @@ public class Promedios extends JFrame{
 		    
 				// aca tiene desplegar los resultados en el panelInferior
 				System.out.println("aca tiene desplegar los resultados en el panelInferior");
-				
-				
+				panelInferior.add(textField_1);
+				panelInferior.getVisibleRect();
 			}
 		
 	}
