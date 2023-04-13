@@ -147,10 +147,7 @@ public class Promedios extends JFrame{
 		    
 				// aca tiene desplegar los resultados en el panelInferior
 				System.out.println("aca tiene desplegar los resultados en el panelInferior");
-				int promedio = Integer.parseInt(txtNota1.getText()+txtNota2.getText()+txtNota3.getText());
-				System.out.println(promedio);
-				String promedioString = promedio+"";
-				txtCondicion.setText(promedioString);
+				txtNota1.setText(txtCondicion.getText());
 				
 				
 			}
