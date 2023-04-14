@@ -18,8 +18,6 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 import javax.xml.bind.ParseConversionEvent;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 public class Promedios extends JFrame{
 
 	
@@ -206,8 +204,7 @@ public class Promedios extends JFrame{
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			// hacer que cierre la ventana al clikeat el boton 
-		System.exit(JFrame.DISPOSE_ON_CLOSE);
-		
+		btn(JFrame.DISPOSE_ON_CLOSE);
 			
 		}
     	  

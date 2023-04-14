@@ -6,7 +6,6 @@ import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.Action;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -17,8 +16,6 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 import javax.xml.bind.ParseConversionEvent;
-
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 public class Promedios extends JFrame{
 
@@ -47,7 +44,7 @@ public class Promedios extends JFrame{
 	
 	public Promedios() {
 		setTitle("Promedios");
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 515, 413);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -112,34 +109,19 @@ public class Promedios extends JFrame{
 		contentPane.add(btnCalcular);
 		
 		btnNuevo = new JButton("NUEVO");
-		btnNuevo.addActionListener(new eventoNuevo());
 		btnNuevo.setBounds(319, 99, 123, 35);
 		contentPane.add(btnNuevo);
 		
 		btnSalir = new JButton("SALIR");
-		btnSalir.addActionListener(new eventoSalir());
 		btnSalir.setBounds(319, 141, 123, 35);
 		contentPane.add(btnSalir);
-		cbTps.addItem("APROBADO");
-		cbTps.addItem("DESAPROBADO");
+		cbTps.addItem("tp1");
+		cbTps.addItem("tp2");
+		cbTps.addItem("tp3");
 		
 		creacionLabel();
 	}
-
-	private boolean isInt(String str) {
-		try 
-		{
-		Integer.parseInt(str);
-		return true;
-		}
-		catch (Throwable e )
-		{
-			return false;
-		}
 	
-	}
-
-
 	/*static JPanel creaBorde( javax.swing.border.Border b ) {
 	    JPanel panel = new JPanel();
 	    String str = b.getClass().toString();
@@ -163,14 +145,7 @@ public class Promedios extends JFrame{
 				
 				if(n1.isEmpty() || n2.isEmpty() || n3.isEmpty())
 				{
-				 JOptionPane.showMessageDialog(contentPane, "Complete todos los campos","Error", JOptionPane.ERROR_MESSAGE);
-				 return;
-				}
-				
-				if(!isInt(n1) || !isInt(n2) || !isInt(n3))
-				{
-					JOptionPane.showMessageDialog(contentPane, "Ingrese un valor numerico","Error",JOptionPane.ERROR_MESSAGE);
-					return;
+				 JOptionPane.showMessageDialog(contentPane, "Ingrese un valor","Error", JOptionPane.ERROR_MESSAGE);	
 				}
 				
 				float nota1 = Integer.parseInt(n1);
@@ -180,39 +155,9 @@ public class Promedios extends JFrame{
 				txtPromedio.setText(prom+"");
 				
 			}
-
+		
 	}
 	
-      public class eventoNuevo implements ActionListener
-      {
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			txtNota1.setText("");
-			txtNota2.setText("");
-			txtNota3.setText("");
-			txtCondicion.setText("");
-			txtPromedio.setText("");
-			
-		}
-    	  
-      }
-
-      public class eventoSalir implements ActionListener
-      {
-
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
-			// hacer que cierre la ventana al clikeat el boton 
-		System.exit(JFrame.DISPOSE_ON_CLOSE);
-		
-			
-		}
-    	  
-      }
-      
 	public void creacionLabel()
 	{
 		lblNota1 = new JLabel("Nota 1 :");

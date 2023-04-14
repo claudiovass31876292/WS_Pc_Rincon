@@ -206,7 +206,7 @@ public class Promedios extends JFrame{
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			// hacer que cierre la ventana al clikeat el boton 
-		System.exit(JFrame.DISPOSE_ON_CLOSE);
+		System.exit();
 		
 			
 		}
