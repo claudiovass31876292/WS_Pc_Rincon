@@ -185,8 +185,8 @@ public class Promedios extends JFrame{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			txtNota1.setText("");
-			txtNota2.setText("");
+			txtNota1.setText(" vacio !");
+			txtNota2.setText(" vacio!x");
 			txtNota3.setText("");
 			txtCondicion.setText("");
 			txtPromedio.setText("");
